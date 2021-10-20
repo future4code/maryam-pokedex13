@@ -1,14 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import Logo from "../../img/Logo.png";
 import PokeLogo from '../../img/PokedexLogo.png';
-import {AddButton, BackButton, BackButtonContainer, Container, DetailContainers, HeaderContainer, ImgBack, ImgFront, LogoContainer, NamePokemon, PokedexLogo, PokedexTitle, PokeImgBack, PokeImgFront, PokemonNameAndButtonsContainer, PokeMoves, PokeStats, PokeType, RemoveButton, TypeAndImgsContainers } from "./styled";
+import { AddButton, BackButton, BackButtonContainer, Container, DetailContainers, HeaderContainer, ImgBack, ImgFront, LogoContainer, NamePokemon, PokedexLogo, PokedexTitle, PokeImgBack, PokeImgFront, PokemonNameAndButtonsContainer, PokeMoves, PokeStats, PokeType, RemoveButton, TypeAndImgsContainers } from "./styled";
 import { useHistory, useParams } from "react-router-dom";
 import { goBack, goToPokedex } from "../../routes/coordinator";
-import Icon from '@material-ui/core/Icon';
-import DeleteIcon from '@material-ui/icons/Delete';
 import axios from "axios";
 import { BASE_URL } from "../../constants/urls";
 import { GlobalStateContext } from "../../global/GlobalStateContext";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import AddIcon from '@material-ui/icons/Add';
+
 
 
 
@@ -50,29 +52,18 @@ const DetailsPage = (props) => {
                         <PokemonNameAndButtonsContainer>
                             <NamePokemon>{pokemon.name}</NamePokemon>
 
-                            <AddButton onClick={() => addPokemonToPokedex(pokemon)}
-                                size="medium"
-                                variant="contained"
-                                color="default"
-                                endIcon={<Icon>send</Icon>}
-                            >
-                                ADICIONAR
+                            <AddButton onClick={() => addPokemonToPokedex(pokemon)}>
+                                <AddIcon color="secondary" fontSize="large" />  ADICIONAR
                             </AddButton>
 
-                            <RemoveButton onClick={() => removePokemonToPokedex(pokemon)}
-                                size="medium"
-                                variant="contained"
-                                color="secondary"
-                                endIcon={<DeleteIcon />}
-                            >
-                                REMOVER
+                            <RemoveButton onClick={() => removePokemonToPokedex(pokemon)}>
+                                <DeleteForeverIcon color="secondary" fontSize="large" /> REMOVER
                             </RemoveButton>
                         </PokemonNameAndButtonsContainer>
 
                         <BackButtonContainer>
-                            <BackButton className="PHeader"
-                                onClick={() => goBack(history)}>
-                                VOLTAR
+                            <BackButton onClick={() => goBack(history)}>
+                            <ArrowBackIosIcon color="secondary" fontSize="large" /> VOLTAR
                             </BackButton>
                         </BackButtonContainer>
                     </HeaderContainer>
