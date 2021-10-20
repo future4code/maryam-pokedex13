@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Logo from "../../img/Logo.png";
 import PokeLogo from '../../img/PokedexLogo.png';
-import { AddButton, BackButton, BackButtonContainer, Container, DetailContainers, HeaderContainer, ImgBack, ImgFront, LogoContainer, NamePokemon, PokedexLogo, PokedexTitle, PokeImgBack, PokeImgFront, PokemonNameAndButtonsContainer, PokeMoves, PokeStats, PokeType, RemoveButton, TypeAndImgsContainers } from "./styled";
+import { AddButton, BackButton, BackButtonContainer, Container, DataContainer, DetailContainers, HeaderContainer, ImgBack, ImgFront, LogoContainer, NamePokemon, PokedexLogo, PokedexTitle, PokeImgBack, PokeImgFront, PokemonNameAndButtonsContainer, PokeMoves, PokeStats, PokeType, RemoveButton, TypeAndImgsContainers } from "./styled";
 import { useHistory, useParams } from "react-router-dom";
 import { goBack, goToPokedex } from "../../routes/coordinator";
 import axios from "axios";
@@ -63,7 +63,7 @@ const DetailsPage = (props) => {
 
                         <BackButtonContainer>
                             <BackButton onClick={() => goBack(history)}>
-                            <ArrowBackIosIcon color="secondary" fontSize="large" /> VOLTAR
+                                <ArrowBackIosIcon color="secondary" fontSize="large" /> VOLTAR
                             </BackButton>
                         </BackButtonContainer>
                     </HeaderContainer>
@@ -88,22 +88,24 @@ const DetailsPage = (props) => {
                             </PokeImgBack>
                         </TypeAndImgsContainers>
 
-                        <PokeStats>
-                            <h1>Poderes</h1>
-                            <p>hp: {pokemon.stats && pokemon.stats[0].base_stat}</p>
-                            <p>attack: {pokemon.stats && pokemon.stats[1].base_stat}</p>
-                            <p>defense: {pokemon.stats && pokemon.stats[2].base_stat}</p>
-                            <p>special-attack: {pokemon.stats && pokemon.stats[3].base_stat}</p>
-                            <p>special-defense: {pokemon.stats && pokemon.stats[4].base_stat}</p>
-                            <p>speed: {pokemon.stats && pokemon.stats[5].base_stat}</p>
-                        </PokeStats>
+                        <DataContainer>
+                            <PokeStats>
+                                <h1>Poderes</h1>
+                                <p>hp: {pokemon.stats && pokemon.stats[0].base_stat}</p>
+                                <p>attack: {pokemon.stats && pokemon.stats[1].base_stat}</p>
+                                <p>defense: {pokemon.stats && pokemon.stats[2].base_stat}</p>
+                                <p>special-attack: {pokemon.stats && pokemon.stats[3].base_stat}</p>
+                                <p>special-defense: {pokemon.stats && pokemon.stats[4].base_stat}</p>
+                                <p>speed: {pokemon.stats && pokemon.stats[5].base_stat}</p>
+                            </PokeStats>
 
-                        <PokeMoves>
-                            <h1>Principais Ataques</h1>
-                            {mainAttacks && mainAttacks.map((move) => {
-                                return <p key={move.move.name}>{move.move.name}</p>
-                            })}
-                        </PokeMoves>
+                            <PokeMoves>
+                                <h1>Principais Ataques</h1>
+                                {mainAttacks && mainAttacks.map((move) => {
+                                    return <p key={move.move.name}>{move.move.name}</p>
+                                })}
+                            </PokeMoves>
+                        </DataContainer>
                     </DetailContainers>
                 </Container>
             ) : (
