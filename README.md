@@ -1,9 +1,9 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Argleydson Leão Dias
+- Mara Priscilla
+- Gabriel Manoel
 
 Link do Surge: www.link.com.br
 
