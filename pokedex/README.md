@@ -5,7 +5,7 @@ Nome dos integrantes:
 - Mara Priscilla
 - Gabriel Manoel
 
-Link do Surge: www.link.com.br
+Link do Surge: https://repulsive-pokedex.surge.sh/
 
 O que funciona:
 - Item 1
