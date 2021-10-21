@@ -14,13 +14,13 @@ export const HeaderContainer = styled.div`
 display: flex;
 align-content: center;
 justify-content: space-between;
+align-items: center;
+padding: 8px
 `
 export const LogoContainer = styled.div`
   display: flex;
   height: auto;
-  width: 5%;
-  padding-left: 10vh;
-  cursor: pointer;
+  width: 5%;  
 `
 
 export const PokedexLogo = styled.img`
@@ -31,9 +31,19 @@ cursor: pointer;
 export const PokedexTitle = styled.img`
 width: 150px;
 height: 100%;
+cursor: pointer;
 `
-export const BackButtonContainer = styled.div``
-export const BackButton = styled.button``
+export const BackButtonContainer = styled.div`
+display: flex;
+align-content: center;
+align-items: center;
+`
+export const BackButton = styled.button`
+display: flex;
+align-content: center;
+align-items: center;
+cursor: pointer;
+`
 
 
 

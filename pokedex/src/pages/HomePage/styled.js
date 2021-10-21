@@ -5,20 +5,20 @@ display: flex;
 flex-direction: column;
 hight: 100vh;
 width: 100vw;
+font-size: 8px;
 `
-
 // Header Container
 export const HeaderContainer = styled.div`
 display: flex;
 align-content: center;
 justify-content: space-between;
+align-items: center;
+padding: 8px
 `
 export const LogoContainer = styled.div`
   display: flex;
   height: auto;
-  width: 5%;
-  padding-left: 10vh;
-  cursor: pointer;
+  width: 5%;  
 `
 
 export const PokedexLogo = styled.img`
@@ -29,6 +29,7 @@ cursor: pointer;
 export const PokedexTitle = styled.img`
 width: 150px;
 height: 100%;
+cursor: pointer;
 `
 
 

@@ -14,7 +14,7 @@ display: flex;
 align-content: center;
 justify-content: space-between;
 align-items: center;
-
+padding: 8px
 `
 export const LogoContainer = styled.div`
   display: flex;
@@ -25,10 +25,12 @@ export const LogoContainer = styled.div`
 export const PokedexLogo = styled.img`
 width: 100%;
 height: 100%;
+cursor: pointer;
 `
 export const PokedexTitle = styled.img`
 width: 150px;
 height: 100%;
+cursor: pointer;
 `
 
 export const PokemonNameAndButtonsContainer = styled.div`
@@ -36,6 +38,7 @@ display: flex;
 align-content: center;
 align-items: center;
 justify-content: space-between;
+
 `
 export const NamePokemon = styled.p`
   text-transform: uppercase;
@@ -44,11 +47,14 @@ export const AddButton = styled.button`
 display: flex;
 align-content: center;
 align-items: center;
+cursor: pointer;
+margin: 8px
 `
 export const RemoveButton = styled.button`
 display: flex;
 align-content: center;
 align-items: center;
+cursor: pointer;
 `
 
 export const BackButtonContainer = styled.div`
@@ -59,7 +65,9 @@ align-items: center;
 export const BackButton = styled.button`
 display: flex;
 align-content: center;
-align-items: center;`
+align-items: center;
+cursor: pointer;
+`
 
 
 //Detail Containers

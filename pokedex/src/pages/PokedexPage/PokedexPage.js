@@ -1,10 +1,11 @@
 import React from "react";
 import Logo from "../../img/Logo.png";
-import {PokemonListContainer, Container, HeaderContainer, LogoContainer, PokedexLogo, PokedexTitle, BackButtonContainer, BackButton } from "./styled";
+import { PokemonListContainer, Container, HeaderContainer, LogoContainer, PokedexLogo, PokedexTitle, BackButtonContainer, BackButton } from "./styled";
 import { useHistory } from "react-router-dom";
 import { goToHome, goToPokedex } from "../../routes/coordinator";
 import PokeCard from "../../components/PokeCard/PokeCard";
 import PokeLogo from '../../img/PokedexLogo.png';
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 
 const PokedexPage = (props) => {
@@ -21,10 +22,12 @@ const PokedexPage = (props) => {
         </LogoContainer>
 
         <BackButtonContainer >
-          <BackButton onClick={() => goToHome(history)}>VOLTAR PARA LISTA</BackButton>
+          <BackButton onClick={() => goToHome(history)}>
+            <ArrowBackIosIcon color="secondary" fontSize="large" /> VOLTAR PARA LISTA
+          </BackButton>
         </BackButtonContainer>
       </HeaderContainer>
-    
+
 
       <PokemonListContainer>
 

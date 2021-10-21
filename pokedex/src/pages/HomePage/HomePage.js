@@ -24,6 +24,7 @@ const HomePage = (props) => {
         <TitleContainer>
           <p>LISTA DE POKEMONS</p>
         </TitleContainer>
+        <div></div>
       </HeaderContainer>
 
       <PokemonListContainer>
