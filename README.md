@@ -10,7 +10,7 @@ Nome dos integrantes:
 
 Link do Surge: https://repulsive-pokedex.surge.sh/
 - Argleydson Leão Dias => Link do Surge: https://repulsive-pokedex.surge.sh/
-- Mara Priscilla => link surge: https://scintillating-rose.surge.sh
+- Mara Priscilla => Link surge: https://scintillating-rose.surge.sh
 
 O que funciona:
 - Item 1
