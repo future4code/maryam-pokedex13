@@ -8,7 +8,7 @@ Nome dos integrantes:
 - Mara Priscilla
 - Gabriel Manoel
 
-Link do Surge: https://repulsive-pokedex.surge.sh/
+Link do Surge: 
 - Argleydson Leão Dias => Link surge: https://repulsive-pokedex.surge.sh/
 - Mara Priscilla => Link surge: https://scintillating-rose.surge.sh
 
