@@ -13,7 +13,7 @@ Link do Surge:
 - Mara Priscilla => Link surge: https://scintillating-rose.surge.sh
 
 O que funciona:
-- Item 1
+- Item 1 . 
 - Item 2
 
 O que não funciona: 
